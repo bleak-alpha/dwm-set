@@ -108,6 +108,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ShiftMask,				XK_l,	   spawn,		   CMD("betterlockscreen -l")}, //lockscreen
+	{ MODKEY,			XK_e,			spawn,			   CMD("pcmanfm")}, //launches pcmanfm
 };
 
 /* button definitions */
