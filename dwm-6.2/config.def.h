@@ -1,5 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-#define CMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+//#define CMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -59,7 +59,7 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+#define CMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
@@ -107,8 +107,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	//{ MODKEY|ShiftMask,				XK_r,	   restart,		   {0}},
 	{ MODKEY|ShiftMask,				XK_l,	   spawn,		   CMD("betterlockscreen -l")}, //lockscreen
-	{ MODKEY,			XK_e,			spawn,			   CMD("pcmanfm")}, //launches pcmanfm
+	{ MODKEY,						XK_e,	   spawn,		   CMD("pcmanfm")}, //launches pcmanfm
+	{ MODKEY,						XK_w,	   spawn,		   CMD("librewolf")}, //launches web browser
+	{ MODKEY,						XK_c,	   spawn,		   CMD("brave")},
 };
 
 /* button definitions */
