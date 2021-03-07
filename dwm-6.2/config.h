@@ -112,6 +112,7 @@ static Key keys[] = {
 	{ MODKEY,						XK_e,	   spawn,		   CMD("pcmanfm")}, //launches pcmanfm
 	{ MODKEY,						XK_w,	   spawn,		   CMD("librewolf")}, //launches web browser
 	{ MODKEY,						XK_c,	   spawn,		   CMD("brave")},
+	{ MODKEY|ShiftMask,		XK_s,			   spawn,		   CMD("gnome-screenshot")}, //Takes screenshot
 };
 
 /* button definitions */
