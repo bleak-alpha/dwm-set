@@ -1,6 +1,6 @@
 #!/bin/sh
 printf "Installing and Setting Up DWM\n"
-cd Downloads/dwm-set/dwm-6.2/
+cd dwm-6.2/
 sudo make clean install
 cd .. && cd dmenu-5.0/
 sudo make clean install
