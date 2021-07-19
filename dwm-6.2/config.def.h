@@ -112,11 +112,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY|ShiftMask,				XK_l,	   spawn,		   CMD("betterlockscreen -l")}, //lockscreen
-	{ MODKEY,						XK_e,	   spawn,		   CMD("pcmanfm")}, //launches pcmanfm
-	{ MODKEY,						XK_w,	   spawn,		   CMD("librewolf")}, //launches web browser
-	{ MODKEY,						XK_c,	   spawn,		   CMD("brave")},
-	{ MODKEY|ShiftMask,		XK_s,			   spawn,		   CMD("gnome-screenshot")}, //Takes screenshot
+	{ MODKEY|ShiftMask,				      XK_l,	     spawn,		   CMD("betterlockscreen -l")}, //lockscreen
+	{ MODKEY,						            XK_e,	     spawn,		   CMD("pcmanfm")}, //launches pcmanfm
+	{ MODKEY,						            XK_w,	     spawn,		   CMD("librewolf")}, //launches web browser
+	{ MODKEY,						            XK_c,	     spawn,		   CMD("brave")},
+	{ MODKEY|ShiftMask,		          XK_s,			 spawn,		   CMD("gnome-screenshot")}, //Takes screenshot
 };
 
 /* button definitions */
