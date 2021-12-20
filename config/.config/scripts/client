@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "hi"
+echo "how are you?"
+echo "I am Fine and you?"

@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+#autostart
+killall slstatus; exec slstatus &
+killall dunst; exec dunst &
+killall pnmixer; exec pnmixer &
+killall batsignal; batsignal -b &
+killall xbindkeys; xbindkeys &
+killall caffeine; caffeine &
+#playerctld daemon &
+#exec batterymon &
+#exec birdtray &
+
+#Wallpaper
+feh --bg-fill ~/Pictures/walls/001.jpg &
+
+#Compositor
+killall picom; picom -f &
+
+#dwm
+exec dwm

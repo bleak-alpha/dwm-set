@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+notify-send "$(playerctl metadata -f '{{ title }} by {{ artist }}')"
