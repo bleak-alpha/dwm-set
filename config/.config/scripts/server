@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-echo "Connection Established"
-echo "hi"
-echo "how are you?"
-echo "I am Fine and you?"
-echo "I am fine too."
